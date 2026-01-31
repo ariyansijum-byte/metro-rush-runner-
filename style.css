@@ -1,1 +1,45 @@
+body {
+  margin: 0;
+  background: #222;
+  overflow: hidden;
+}
 
+#game {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#555, #111);
+  position: relative;
+}
+
+#player {
+  width: 50px;
+  height: 70px;
+  background: yellow;
+  position: absolute;
+  bottom: 20px;
+  left: 45%;
+  border-radius: 10px;
+}
+
+.obstacle {
+  width: 50px;
+  height: 60px;
+  background: red;
+  position: absolute;
+  top: -80px;
+  left: 45%;
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+  0% { top: -80px; }
+  100% { top: 100vh; }
+}
+
+#score {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
