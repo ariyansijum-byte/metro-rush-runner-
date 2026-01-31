@@ -1,45 +1,113 @@
+/* =========================
+   RESET / BASIC STYLING
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  background: #222;
-  overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
-#game {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(#555, #111);
-  position: relative;
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-#player {
-  width: 50px;
-  height: 70px;
-  background: yellow;
-  position: absolute;
-  bottom: 20px;
-  left: 45%;
-  border-radius: 10px;
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
 }
 
-.obstacle {
-  width: 50px;
-  height: 60px;
-  background: red;
-  position: absolute;
-  top: -80px;
-  left: 45%;
-  animation: move 2s linear infinite;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-@keyframes move {
-  0% { top: -80px; }
-  100% { top: 100vh; }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-#score {
-  color: white;
-  font-size: 22px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        margin: 20px;
+        padding: 15px;
+    }
 }
