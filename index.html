@@ -1,17 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Subway Style Game</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ariyan's clean HTML template example.">
+    <title>Clean HTML Template</title>
+    <!-- CSS Link -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Welcome to My Clean HTML Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div id="game">
-  <div id="player"></div>
-  <div class="obstacle"></div>
-  <div id="score">Score: 0</div>
-</div>
+    <main>
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is a clean and minimal HTML template. You can expand it as per your needs.</p>
+            <button onclick="alert('Button Clicked!')">Click Me</button>
+        </section>
 
-<script src="script.js"></script>
+        <section id="about">
+            <h2>About Section</h2>
+            <p>This template uses inline CSS for simplicity but you can move it to an external stylesheet.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <p>You can add a contact form or social links here.</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Ariyan. All Rights Reserved.
+    </footer>
+
+    <!-- JS Script -->
+    <script>
+        console.log("Page Loaded Successfully!");
+    </script>
 </body>
 </html>
